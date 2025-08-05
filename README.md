@@ -56,13 +56,6 @@ Training time for [corpus.txt](./data/corpus.txt) with 5000 iterations:
 | Apple M4 MacBook Pro (16GB RAM, 1TB Storage) | 178 minutes               | 2.97 hours               |
 | NVIDIA Tesla P100 GPU                        | 20 minutes 😂             | 0.33 hours               |
 
-Training time for [corpus_wikipedia_combined.txt](./data/corpus_wikipedia_combined.txt) with 5000 iterations:
-
-| **Device**                     | **Training Time**         | **Equivalent in Hours** |
-|--------------------------------|---------------------------|--------------------------|
-| Apple M4 MacBook Pro (16GB RAM, 1TB Storage) | *** minutes               | *.** hours               |
-| NVIDIA Tesla P100 GPU                        | 26 minutes 😂             | 0.34                     |
-
 The model will:
 
 1. Load training data from `data/corpus.txt` or `data/corpus_wikipedia_combined.txt`
