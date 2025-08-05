@@ -114,19 +114,19 @@ class CharLMInference:
         ckpt_path = Path(ckpt_dir)
 
         # tokenizer
-        meta = json.loads((ckpt_path / "meta.json").read_text())
+        meta = json.loads((ckpt_path / "meta_20250805_112037.json").read_text())
         self.stoi = meta["stoi"]
         self.itos = {int(k): v for k, v in meta["itos"].items()}
         self.vocab_size = meta["vocab_size"]
         self.block_size = meta["block_size"]
 
         # config
-        cfg = json.loads((ckpt_path / "config.json").read_text())
+        cfg = json.loads((ckpt_path / "config_20250805_112037.json").read_text())
 
         # build & load model
         self.device = torch.device(device)
         self.model = CharLM(vocab_size=self.vocab_size).to(self.device)
-        state = torch.load(ckpt_path / "model.pt", map_location=self.device)
+        state = torch.load(ckpt_path / "model_20250805_112037.pt", map_location=self.device)
         # map old keys if necessary
         key_map = {
             "tok_emb.weight": "tok_emb.weight",
