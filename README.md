@@ -58,7 +58,7 @@ Training time for [corpus.txt](./data/corpus.txt) with 5000 iterations:
 
 The model will:
 
-1. Load training data from `data/corpus.txt` or `data/corpus_wikipedia_combined.txt`
+1. Load training data from `data/corpus.txt`
 2. Train for 5000 iterations
 3. Save model checkpoints to `model/` directory
 
