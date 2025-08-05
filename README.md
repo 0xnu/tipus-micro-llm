@@ -41,10 +41,12 @@ uv pip install -r requirements.txt
 python3 -m pip install --upgrade pip
 ```
 
-### Training (Python)
+### Training
 
 ```sh
 python3 -m tipus
+
+## Training time on Apple M4 Macbook Pro 16GB (Memory) and 1TB (Storage) is 178 minutes or 2.97 hours
 ```
 
 The model will:
