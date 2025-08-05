@@ -11,6 +11,7 @@
 
 from __future__ import annotations
 import json
+import datetime as dt
 from pathlib import Path
 
 import torch
@@ -179,17 +180,33 @@ for iter in range(max_iters):
 # -----------------------------
 # Save checkpoint
 # -----------------------------
+timestamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
 save_dir = Path("model")
 save_dir.mkdir(exist_ok=True)
-torch.save(model.state_dict(), save_dir / "model.pt")
-(save_dir / "meta.json").write_text(json.dumps({"stoi": stoi, "itos": itos,
-                                                "vocab_size": vocab_size,
-                                                "block_size": block_size}))
-(save_dir / "config.json").write_text(json.dumps({"n_layer": n_layer,
-                                                  "n_head": n_head,
-                                                  "n_embd": n_embd,
-                                                  "dropout": dropout}))
-print("Saved checkpoint to", save_dir.resolve())
+
+model_file = save_dir / f"model_{timestamp}.pt"
+torch.save(model.state_dict(), model_file)
+
+meta = {
+    "stoi": stoi,
+    "itos": itos,
+    "vocab_size": vocab_size,
+    "block_size": block_size,
+    "timestamp": timestamp,
+}
+(save_dir / f"meta_{timestamp}.json").write_text(
+    json.dumps(meta, ensure_ascii=False)
+)
+
+cfg = {
+    "n_layer": n_layer,
+    "n_head": n_head,
+    "n_embd": n_embd,
+    "dropout": dropout,
+}
+(save_dir / f"config_{timestamp}.json").write_text(json.dumps(cfg))
+
+print("Saved checkpoint to", model_file)
 
 # -----------------------------
 # Quick inference sanity-check

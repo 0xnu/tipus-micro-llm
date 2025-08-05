@@ -49,6 +49,8 @@ python3 -m tipus
 
 #### Training Comparison
 
+Training time for [corpus.txt](./data/corpus.txt) with 5000 iterations:
+
 | **Device**                     | **Training Time**         | **Equivalent in Hours** |
 |--------------------------------|---------------------------|--------------------------|
 | Apple M4 MacBook Pro (16GB RAM, 1TB Storage) | 178 minutes               | 2.97 hours               |
@@ -56,7 +58,7 @@ python3 -m tipus
 
 The model will:
 
-1. Load training data from `data/corpus.txt`
+1. Load training data from `data/corpus.txt` or `data/corpus_wikipedia_combined.txt`
 2. Train for 5000 iterations
 3. Save model checkpoints to `model/` directory
 
