@@ -1,0 +1,100 @@
+Hello world. This is a tiny corpus for a tiny language model.
+We are going to train it character by character with pure PyTorch.
+The sun rises in the east and sets in the west.
+Machine learning is a fascinating field of study.
+Data science combines statistics, computer science, and domain knowledge.
+Natural language processing enables computers to understand human language.
+PyTorch is a popular framework for deep learning applications.
+The quick brown fox jumps over the lazy dog.
+Every journey begins with a single step.
+In the world of technology, change is the only constant.
+Creativity is intelligence having fun.
+The future belongs to those who believe in the beauty of their dreams.
+A picture is worth a thousand words.
+Learning from failure is a key to success.
+The rain in Spain stays mainly in the plain.
+Algorithms are the backbone of modern computing.
+Collaboration leads to innovation and progress.
+The universe is vast and full of mysteries.
+Reading expands the mind and enriches the soul.
+Every problem has a solution waiting to be discovered.
+Hello world. This is a tiny corpus for a tiny language model.
+We are going to train it character by character with pure PyTorch.
+The sun rises in the east and sets in the west.
+Machine learning is a fascinating field of study.
+Data science combines statistics, computer science, and domain knowledge.
+Natural language processing enables computers to understand human language.
+PyTorch is a popular framework for deep learning applications.
+The quick brown fox jumps over the lazy dog.
+Every journey begins with a single step.
+In the world of technology, change is the only constant.
+Creativity is intelligence having fun.
+The future belongs to those who believe in the beauty of their dreams.
+A picture is worth a thousand words.
+Learning from failure is a key to success.
+The rain in Spain stays mainly in the plain.
+Algorithms are the backbone of modern computing.
+Collaboration leads to innovation and progress.
+The universe is vast and full of mysteries.
+Reading expands the mind and enriches the soul.
+Every problem has a solution waiting to be discovered.
+Hello world. This is a tiny corpus for a tiny language model.
+We are going to train it character by character with pure PyTorch.
+The sun rises in the east and sets in the west.
+Machine learning is a fascinating field of study.
+Data science combines statistics, computer science, and domain knowledge.
+Natural language processing enables computers to understand human language.
+PyTorch is a popular framework for deep learning applications.
+The quick brown fox jumps over the lazy dog.
+Every journey begins with a single step.
+In the world of technology, change is the only constant.
+Creativity is intelligence having fun.
+The future belongs to those who believe in the beauty of their dreams.
+A picture is worth a thousand words.
+Learning from failure is a key to success.
+The rain in Spain stays mainly in the plain.
+Algorithms are the backbone of modern computing.
+Collaboration leads to innovation and progress.
+The universe is vast and full of mysteries.
+Reading expands the mind and enriches the soul.
+Every problem has a solution waiting to be discovered.
+Hello world. This is a tiny corpus for a tiny language model.
+We are going to train it character by character with pure PyTorch.
+The sun rises in the east and sets in the west.
+Machine learning is a fascinating field of study.
+Data science combines statistics, computer science, and domain knowledge.
+Natural language processing enables computers to understand human language.
+PyTorch is a popular framework for deep learning applications.
+The quick brown fox jumps over the lazy dog.
+Every journey begins with a single step.
+In the world of technology, change is the only constant.
+Creativity is intelligence having fun.
+The future belongs to those who believe in the beauty of their dreams.
+A picture is worth a thousand words.
+Learning from failure is a key to success.
+The rain in Spain stays mainly in the plain.
+Algorithms are the backbone of modern computing.
+Collaboration leads to innovation and progress.
+The universe is vast and full of mysteries.
+Reading expands the mind and enriches the soul.
+Every problem has a solution waiting to be discovered.
+Hello world. This is a tiny corpus for a tiny language model.
+We are going to train it character by character with pure PyTorch.
+The sun rises in the east and sets in the west.
+Machine learning is a fascinating field of study.
+Data science combines statistics, computer science, and domain knowledge.
+Natural language processing enables computers to understand human language.
+PyTorch is a popular framework for deep learning applications.
+The quick brown fox jumps over the lazy dog.
+Every journey begins with a single step.
+In the world of technology, change is the only constant.
+Creativity is intelligence having fun.
+The future belongs to those who believe in the beauty of their dreams.
+A picture is worth a thousand words.
+Learning from failure is a key to success.
+The rain in Spain stays mainly in the plain.
+Algorithms are the backbone of modern computing.
+Collaboration leads to innovation and progress.
+The universe is vast and full of mysteries.
+Reading expands the mind and enriches the soul.
+Every problem has a solution waiting to be discovered.
