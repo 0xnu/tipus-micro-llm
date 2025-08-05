@@ -45,9 +45,14 @@ python3 -m pip install --upgrade pip
 
 ```sh
 python3 -m tipus
-
-## Training time on Apple M4 Macbook Pro 16GB (Memory) and 1TB (Storage) is 178 minutes or 2.97 hours
 ```
+
+#### Training Comparison
+
+| **Device**                     | **Training Time**         | **Equivalent in Hours** |
+|--------------------------------|---------------------------|--------------------------|
+| Apple M4 MacBook Pro (16GB RAM, 1TB Storage) | 178 minutes               | 2.97 hours               |
+| NVIDIA Tesla P100 GPU                        | 20 minutes 😂             | 0.33 hours               |
 
 The model will:
 
