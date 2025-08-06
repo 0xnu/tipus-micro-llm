@@ -12,7 +12,6 @@
 from __future__ import annotations
 import json
 from pathlib import Path
-from typing import Dict, Optional
 
 import torch
 import torch.nn as nn
@@ -121,7 +120,7 @@ class CharLMInference:
         self.block_size = meta["block_size"]
 
         # config
-        cfg = json.loads((ckpt_path / "config_20250805_112037.json").read_text())
+        json.loads((ckpt_path / "config_20250805_112037.json").read_text())
 
         # build & load model
         self.device = torch.device(device)
