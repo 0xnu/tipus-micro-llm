@@ -1,0 +1,45 @@
+[Input Indices: (Batch, Seq_Len)]
+          │
+          ▼
+┌───────────────────────────────┐
+│   Token Embedding Table       │  (nn.Embedding)
+├───────────────────────────────┤
+│   Position Embedding Table    │  (nn.Embedding)
+└─────────────┬─────────────────┘
+              │
+   [Token Embedding + Positional Embedding]
+              │
+              ▼
+┌───────────────────────────────┐
+│   Stacked Transformer Blocks  │
+│     (n_layer times)           │
+│                               │
+│ ┌───────────────────────────┐ │
+│ │ 1. LayerNorm              │ │
+│ │ 2. Multi-Head Causal      │ │
+│ │    Self-Attention         │ │
+│ │    (with masking)         │ │
+│ │ 3. Residual Connection    │ │
+│ │ 4. LayerNorm              │ │
+│ │ 5. FeedForward            │ │
+│ │ 6. Residual Connection    │ │
+│ └───────────────────────────┘ │
+└─────────────┬─────────────────┘
+              │
+              ▼
+      [Final LayerNorm]
+              │
+              ▼
+┌───────────────────────────────┐
+│  Linear Output Projection     │
+│   (to vocab size logits)      │
+└─────────────┬─────────────────┘
+              │
+              ▼
+    [Logits: (Batch, Seq_Len, Vocab)]
+              │
+              ▼
+       [Softmax & Sampling]
+              │
+              ▼
+    [Next Character Prediction]

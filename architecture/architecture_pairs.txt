@@ -1,0 +1,48 @@
+[Input IDs: (Batch, Seq_Len)]
+          │
+          ▼
+┌───────────────────────────────┐
+│        Token Embedding        │ (nn.Embedding)
+└─────────────┬─────────────────┘
+              │
+              ▼
+┌───────────────────────────────┐
+│     Positional Encoding       │ (sinusoidal positional encoding)
+└─────────────┬─────────────────┘
+              │
+   [Token Embedding + Positional Encoding]
+              │
+              ▼
+┌───────────────────────────────┐
+│      Transformer Blocks       │ (Repeated n_layer times)
+│                               │
+│ ┌───────────────────────────┐ │
+│ │ 1. LayerNorm              │ │
+│ │ 2. Multi-Head Causal      │ │
+│ │    Self-Attention         │ │
+│ │    (with masking)         │ │
+│ │ 3. Residual Connection    │ │
+│ │ 4. LayerNorm              │ │
+│ │ 5. FeedForward Network    │ │
+│ │    - Linear → GELU        │ │
+│ │    - Linear → Dropout     │ │
+│ │ 6. Residual Connection    │ │
+│ └───────────────────────────┘ │
+└─────────────┬─────────────────┘
+              │
+              ▼
+      [Final LayerNorm]
+              │
+              ▼
+┌───────────────────────────────┐
+│   Linear Output Projection    │ (to vocab size logits)
+└─────────────┬─────────────────┘
+              │
+              ▼
+      [Logits: (Batch, Seq_Len, Vocab)]
+              │
+              ▼
+      [Softmax & Sampling]
+              │
+              ▼
+      [Next Token Prediction]
