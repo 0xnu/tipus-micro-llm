@@ -1,6 +1,5 @@
 ## Tipus Micro-LLM
 
-[![Lint](https://github.com/0xnu/tipus-micro-llm/actions/workflows/lint.yaml/badge.svg)](https://github.com/0xnu/tipus-micro-llm/actions/workflows/lint.yaml)
 [![Release](https://img.shields.io/github/release/0xnu/tipus-micro-llm.svg)](https://github.com/0xnu/tipus-micro-llm/releases/latest)
 [![License](https://img.shields.io/badge/License-Modified_MIT-f5de53?&color=f5de53)](/LICENSE)
 
