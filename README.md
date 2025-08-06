@@ -4,6 +4,9 @@
 [![Release](https://img.shields.io/github/release/0xnu/tipus-micro-llm.svg)](https://github.com/0xnu/tipus-micro-llm/releases/latest)
 [![License](https://img.shields.io/badge/License-Modified_MIT-f5de53?&color=f5de53)](/LICENSE)
 
+> [!IMPORTANT]
+> Give me GPUs, and I'll train open-source LLMs with internet access for shits and giggles. 😁 😎
+
 Character-level and token-based language models implemented in pure PyTorch, featuring:
 
 - Character-level language model with:
@@ -20,9 +23,6 @@ Character-level and token-based language models implemented in pure PyTorch, fea
 - Training on next-character prediction (character-level)
 - Training on next-token prediction (token-based)
 - FastAPI-based REST API for text generation
-
-> [!IMPORTANT]
-> Give me GPUs, and I'll train open-source LLMs with internet access for shits and giggles. 😁 😎
 
 ### Model Architecture (Character-level)
 
