@@ -103,7 +103,7 @@ uvicorn serve:app --host 0.0.0.0 --port 2025 ## Character-level language model
 uvicorn serve_pairs:app --host 0.0.0.0 --port 2025 ## Token-based language model
 ```
 
-### Generate Text (Character-level)
+#### Generate Text (Character-level)
 
 ```sh
 curl -X POST http://localhost:2025/generate \
@@ -111,14 +111,14 @@ curl -X POST http://localhost:2025/generate \
      -d '{"prompt":"Creativity is ", "max_new_tokens":26, "temperature":0.8, "top_k": 1}'
 ```
 
-#### API Parameters (Character-level)
+##### API Parameters (Character-level)
 
 - `prompt`: Initial text to continue
 - `max_new_tokens`: Maximum length of generated text
 - `temperature`: Controls randomness (lower = more deterministic)
 - `top_k`: Limits vocabulary to top-k most likely tokens
 
-### Generate Text (Token-based)
+#### Generate Text (Token-based)
 
 ```sh
 ## Token-based
@@ -127,7 +127,7 @@ curl -X POST http://localhost:2025/generate \
      -d '{"question":"What is the capital of France?", "max_length":120, "temperature":0.7}'
 ```
 
-### API Parameters (Token-based)
+##### API Parameters (Token-based)
 
 - `question`: Your question (e.g., "What is the capital of France?")
 - `max_length`: Maximum length of generated text
