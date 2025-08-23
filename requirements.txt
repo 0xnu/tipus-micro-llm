@@ -1,4 +1,11 @@
+accelerate
+datasets
 fastapi
+huggingface_hub
 numpy
+safetensors
+tokenizers
 torch
+transformers
 uvicorn
+wandb
